@@ -13,10 +13,10 @@
 - **一个 Base URL、一把 Key**：四类上游（WorkBuddy / Qoder / Trae / 鸡蛋免费源）合成一个模型池，模型 id 形如 `模型名 · 供应商`，后缀优先决定去向，客户端不必按网关拆配置。
 - **接账号，不接 API Key**：WorkBuddy / Qoder / Trae 走浏览器 OAuth、设备码或桌面客户端导入，不用去各家申请 Key；签到、连登、积分任务、Token 保活由后台常驻调度器自动执行。
 - **零账号也能用**：`?provider=egg` 聚合 OpenCode Zen 免费车道与 Kilo 免费池，克隆下来启动就能调，不需要任何凭据。
-- **只用标准库**：Python 3.9+ 直接跑，不装依赖；另有 GHCR 镜像，可 Docker / NAS 一键部署。
+- **只用标准库**：Python 3.9+ 直接跑，不装依赖；另有 GHCR 镜像，可 Docker / NAS 一键部署。  
 
 > 仓库：[cty1735/wb-proxy](https://github.com/cty1735/wb-proxy) ｜ 上游基座：[workbuddy2api-hub v1.7.16](https://github.com/ardeyouxipianyi/workbuddy2api-hub)（本项目在其全部能力之上增量开发，差异见 [「增量功能」](#增量功能) 与 [docs/COMPARISON.md](docs/COMPARISON.md)）
->
+> 
 > **两个 wb-proxy 不是一回事**：本仓库 `cty1735/wb-proxy` 是独立项目；上游 `workbuddy2api-hub` 的**主程序文件名也叫 `wb_proxy.py`**，中文搜索里常把两者混为一谈。看到「workbuddy2api-hub 里的本地网关」指的是上游那个文件，不是本仓库。
 >
 > 常见问题：[docs/FAQ.md](docs/FAQ.md) ｜ 完整更新历史：[docs/CHANGELOG.md](docs/CHANGELOG.md) ｜ AI / 检索用摘要：[llms.txt](llms.txt)
@@ -593,7 +593,7 @@ export ANTHROPIC_API_KEY="你在看板设置中添加并绑定的API_Key"
 
 ## 六、版本更新记录 (Changelog)
 
-<!-- 发版时：把下面的 Unreleased 段落整理成新版本号（## vX.Y.Z），整体移入 docs/CHANGELOG.md 顶部 -->
+<!-- 发版时：把下面的 Unreleased 段落整理成新版本号（## vX.Y.Z），整体移入 docs/CHANGELOG.md 顶部的 -->
 
 ### Unreleased
 
