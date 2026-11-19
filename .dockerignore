@@ -1,0 +1,12 @@
+.git
+.github
+docs/
+python/
+tests/
+*.bat
+*.command
+*.sh
+*.log
+README.md
+LICENSE
+uv.lock
